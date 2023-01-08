@@ -35,6 +35,10 @@ public class DragAndDrop1
         
         Actions action = new Actions(driver);
         action.dragAndDrop(from, to).perform();
+       
+        //perform a drag and drop action using the clickAndHold and release methods, like this:
+        
+        //action.clickAndHold(from).moveToElement(to).release().perform();
         
         String toText = to.getText();
         System.out.println(toText);
